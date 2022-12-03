@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Print string in uppercase."""
+
+
 def uppercase(str):
     # check for letters in the string given
     for letter in str:
