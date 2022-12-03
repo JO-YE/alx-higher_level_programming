@@ -11,4 +11,3 @@ def fizzbuzz():
             print("Fizz ", end='')
         else:
             print("{} ".format(num), end='')
-# the two print method used in this code works the same way
