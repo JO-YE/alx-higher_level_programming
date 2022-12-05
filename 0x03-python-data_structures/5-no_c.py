@@ -3,5 +3,5 @@
 
 
 def no_c(my_string):
-    idx = len(
+    my_string[].remove(c)
     return(my_string)
