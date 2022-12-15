@@ -1,10 +1,10 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 def roman_to_int(roman_string):
     if (type(roman_string) is not str) or (not roman_string):
         return 0
     else:
         roman_value = {'I' : 1, 'V' : 5, 'X' : 10, 'L' : 50, 'C' : 100, 
-                           'D' : 500, 'M' : 1000}
+                       'D' : 500, 'M' : 1000}
         special_cases = {'IV' : 4, 'IX' : 9, 'XL' : 40, 'XC' : 90, 
                             'CD' : 400, 'CM' : 900}
         total = 0
