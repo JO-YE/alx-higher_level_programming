@@ -10,5 +10,6 @@ Exception('Too far')
                 result += (a ** b) / i
         except:
             result = b + a
+            break
     return result
 
