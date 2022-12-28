@@ -39,7 +39,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         if not type(value[0]) is int:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if not type(value[1]) is int::
+        if not type(value[1]) is int:
             raise TypeError("position must be a tuple of 2 positive integers")
         if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
