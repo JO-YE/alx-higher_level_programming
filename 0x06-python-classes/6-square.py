@@ -6,6 +6,7 @@
 class Square:
     """Continuation from 4-...py in addition with a pub.obj method."""
     def __init__(self, size=0, position=(0, 0)):
+        """Method to initialize the square object."""
         self.size = size
         self.position = position
 
@@ -63,4 +64,4 @@ class Square:
                     print(" ", end='')
                 for k in range(self.__size):
                     print("#", end='')
-                print() 
+                print()
