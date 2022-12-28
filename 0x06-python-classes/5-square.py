@@ -7,10 +7,12 @@ class Square:
     """Continuation from 4-...py in addition with a pub.obj method."""
     def __init__(self, size=0):
         self.size = size
+
     @property
     def size(self):
         """Property to retrive it."""
         return self.__size
+
     @size.setter
     def size(self, value):
         """Property setter to set it."""
