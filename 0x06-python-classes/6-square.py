@@ -31,7 +31,6 @@ class Square:
         return self.__position
 
     @position.setter
-    """Method that sets the position value of a square object."""
     def position(self, value):
         if not type(value) is tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
