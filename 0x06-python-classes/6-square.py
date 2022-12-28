@@ -4,7 +4,7 @@
 
 
 class Square:
-    """Continuation from 4-...py in addition with a pub.obj method."""
+    """Continuation from 5-...py in addition with a pub.obj method."""
     def __init__(self, size=0, position=(0, 0)):
         """Method to initialize the square object."""
         self.size = size
@@ -37,14 +37,13 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         if len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if type(value[0]) != int:
+        if not type(value[0]) is int:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if type(value[1]) != int:
+        if not type(value[1]) is int::
             raise TypeError("position must be a tuple of 2 positive integers")
         if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__position = value
+        self.__position = value
 
     def area(self):
         """Returns the current square area."""
