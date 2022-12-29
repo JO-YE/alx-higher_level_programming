@@ -40,7 +40,7 @@ class SinglyLinkedList:
             rtn += str(ptr.data)
             if ptr.next_node is not None:
                 rtn += "\n"
-                ptr = ptr.next_node
+            ptr = ptr.next_node
         
         return rtn
 
