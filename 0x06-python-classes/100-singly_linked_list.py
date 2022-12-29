@@ -30,6 +30,7 @@ class Node:
         self.__next_node = value
 
 class SinglyLinkedList:
+    """A class that define singly linked list."""
     def __str__(self):
         rtn = ""
         ptr = self.__head
