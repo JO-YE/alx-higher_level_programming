@@ -5,7 +5,7 @@
 
 class Square:
     """Continuation from 6-..py."""
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
 
@@ -25,6 +25,7 @@ class Square:
     def position(self):
         """Property to retrive it."""
         return self.__position
+
     @position.setter
     def position(self, value):
         if not type(value) is tuple:
