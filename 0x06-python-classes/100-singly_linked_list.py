@@ -32,15 +32,33 @@ class Node:
 
 class SinglyLinkedList:
     """A class that define a singly Linked list."""
+    def __str__(self):
+    rtn = ""
+    ptr = self.__head
+
+    while ptr is not None:
+        rtn += str(ptr.data)
+        if ptr.next_node is not None:
+            rtn += "\n"
+        ptr = ptr.next_node
+
+    return rtn
+
     def __init__(self):
         self.__head = None
 
     def sorted_insert(self, value):
-        new = Node(value)
-        if self.__head is None:
-            new.next_node = None
-            self.__head = new
-        elif self.__head.data > value:
-            new.next_node = self.__head
-            self.head = new
+        ptr = self.__head
+
+        while ptr is not None:
+            if ptr.data > value:
+                break
+            ptr_prev = ptr
+            ptr = ptr.next_node
+
+        newNode = Node(value, ptr)
+        if ptr == self.__head:
+            self.__head = newNode
+        else:
+            ptr_prev.next_node = newNode
         
