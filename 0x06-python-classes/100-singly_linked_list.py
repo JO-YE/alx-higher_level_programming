@@ -31,7 +31,6 @@ class Node:
             raise TypeError('next_node must be a Node object')
 
 class SinglyLinkedList:
-    """A class that define a singly Linked list."""
     def __str__(self):
     rtn = ""
     ptr = self.__head
