@@ -14,7 +14,7 @@ class Node:
         return self.__data
 
     @data.setter
-    def data(self, value):
+   def data(self, value):
         if not type(value) is int:
             raise TypeError('data must be an integer')
         self.__data = value
@@ -29,6 +29,7 @@ class Node:
             raise TypeError('next_node must be a Node object')
         self.__next_node = value
 
+
 class SinglyLinkedList:
     """A class that define singly linked list."""
     def __str__(self):
@@ -39,7 +40,7 @@ class SinglyLinkedList:
             rtn += str(ptr.data)
             if ptr.next_node is not None:
                 rtn += "\n"
-            ptr = ptr.next_node
+                ptr = ptr.next_node
         
         return rtn
 
@@ -60,4 +61,3 @@ class SinglyLinkedList:
             self.__head = newNode
         else:
             ptr_prev.next_node = newNode
-        
