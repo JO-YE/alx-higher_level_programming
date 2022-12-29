@@ -41,7 +41,7 @@ class SinglyLinkedList:
             if ptr.next_node is not None:
                 rtn += "\n"
             ptr = ptr.next_node
-     
+
         return rtn
 
     def __init__(self):
