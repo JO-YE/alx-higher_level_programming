@@ -1,0 +1,10 @@
+The ''2-matrix_divided'' module
+=============================
+
+Using ''matrix_divided''
+----------------------
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix_divided([[2, 4, 6], [50, 100, 25]],  2)
+[[1.0, 2.0, 3.0], [25.0, 50.0, 12.5]]
