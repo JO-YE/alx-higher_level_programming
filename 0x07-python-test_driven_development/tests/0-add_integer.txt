@@ -37,3 +37,8 @@ Passing a string
     >>> add_integer('Hey')
     Traceback (most recent call last):
     TypeError: a must be an integer
+
+Case Overflow
+    >>> add_integer(float('inf'), 0)
+    Traceback (most recent call last):
+    OverflowError: ...
