@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+
+'''This module consist of a function that can add two numbers.'''
+
+
 def add_integer(a, b=98):
     '''Function that adds 2 integers.'''
     if type(a) != int and type(a) != float:
