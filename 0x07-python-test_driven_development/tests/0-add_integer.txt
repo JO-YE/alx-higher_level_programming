@@ -1,0 +1,39 @@
+The ''0-add_integer'' module
+
+Using ''add_integer''
+
+Importing function from the module
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Adding two numbers (3, 4)
+    >>> add_integer(3, 4)
+    7
+
+Adding 6 to 98(default)
+    >>> add_integer(6)
+    104
+
+Adding float and integer
+    >>> add_integer(1.1, 6)
+    7
+
+Adding a letter and number
+   >>> add_integer('98', 9)
+   Traceback (most recent call last):
+        ...
+   TypeError: a must be an integer
+
+Two float
+    >>> add_integer(1.6, 2.7)
+    3
+
+Adding integer with string
+    >>> add_integer(40, 'hello')
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+Passing a string
+    >>> add_integer('Hey')
+    Traceback (most recent call last):
+    TypeError: a must be an integer
