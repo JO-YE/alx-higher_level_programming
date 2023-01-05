@@ -24,5 +24,5 @@ def matrix_divided(matrix, div):
  of integers/floats')
     return list(map(lambda row: list(map(lambda num: round(num / div, 2),\
  row)),matrix.copy()))
-# The round function round it up to whatever decimal point needed.
-# In this case, 2 decimal places
+#The round function round it up to whatever decimal point needed.
+#In this case, 2 decimal places
