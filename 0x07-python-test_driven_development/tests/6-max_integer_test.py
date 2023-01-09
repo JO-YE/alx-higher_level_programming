@@ -31,12 +31,12 @@ class TestMaxInteger(unittest.TestCase):
         my_list = [-2, -5, -9, -3, -8]
         self.assertEqual(max_integer(my_list), -2)
 
-    def one_element(self):
+    def test_one_element(self):
         '''List of one element.'''
         my_list = [-2]
         self.assertEqual(max_integer(my_list), -2)
 
-    def empty_list(self):
+    def test_empty_list(self):
         '''Empty list.'''
         my_list = []
         self.assertEqual(max_integer(my_list), None)
