@@ -1,4 +1,5 @@
 #/usr/bin/python3
+
 '''Tasks on input/output functions.'''
 
 
