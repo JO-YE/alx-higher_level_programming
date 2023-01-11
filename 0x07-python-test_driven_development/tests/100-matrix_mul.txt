@@ -51,6 +51,10 @@ Passing a tuple as a matrix
     	      ...
     TypeError: m_a must be a list
 
+>>> matrix_mul([[1, 2], [3, 4]], [1, 2])
+Traceback (most recent call last):
+TypeError: m_b must be a list of lists
+
 Passing a string as a matrix
 
     >>> matrix_mul([[3, 3], [4, 4]], "Holberton")
