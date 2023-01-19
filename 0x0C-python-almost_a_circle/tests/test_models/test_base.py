@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+'''Unitest on all file, classes and method.'''
 import unittest
 from models.base import Base
-'''Unitest on all file, classes and method.'''
 
 
 class Test(unittest.TestCase):
