@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 '''Test for class Rectangle.'''
 import unittest
 from models.rectangle import Rectangle
