@@ -77,11 +77,11 @@ class Rectangle(Base):
 
     def display(self):
         '''Printing to stdout rectangle instance with character #.'''
-        rectangle = ''
+        rectangle = self.y * '\n'
         if self.width == 0 or self.height == 0:
             return rectangle
         for i in range(self.height):
-#            rectangle += (" " * self.x)
+            rectangle += (" " * self.x)
             rectangle += ("#" * self.width) + "\n"
         print(rectangle, end='')
 
