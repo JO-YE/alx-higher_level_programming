@@ -114,3 +114,24 @@ class TestRectangle(unittest.TestCase):
         """ Trying to pass invalid values """
         with self.assertRaises(ValueError):
             new = Rectangle(1, 1, 1, -1)
+
+    def test_area(self):
+        """ Checking the return value of area method """
+        new = Rectangle(4, 5)
+        self.assertEqual(new.area(), 20)
+
+    def test_area_2(self):
+        """ Checking the return value of area method """
+        new = Rectangle(2, 2)
+        self.assertEqual(new.area(), 4)
+        new.width = 5
+        self.assertEqual(new.area(), 10)
+        new.height = 5
+        self.assertEqual(new.area(), 25)
+
+    def test_area_3(self):
+        """ Checking the return value of area method """
+        new = Rectangle(3, 8)
+        self.assertEqual(new.area(), 24)
+        new2 = Rectangle(10, 10)
+        self.assertEqual(new2.area(), 100)
