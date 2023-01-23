@@ -1,1 +1,1 @@
-[{"y": 0, "x": 0, "height": 5, "width": 5, "id": 1}, {"y": 5, "x": 5, "height": 2, "width": 8, "id": 2}]
+[{"height": 5, "width": 5, "x": 0, "id": 1, "y": 0}, {"height": 2, "width": 8, "x": 5, "id": 2, "y": 5}]
