@@ -15,3 +15,6 @@ https://youtu.be/sjyJBL5fkp8
 https://youtu.be/vZBCTc9zHtI
 https://github.com/mbeaudru/modern-js-cheatsheet
 https://anjana.dev/javascript-first-steps/
+
+## semistandard
+https://github.com/standard/semistandard
