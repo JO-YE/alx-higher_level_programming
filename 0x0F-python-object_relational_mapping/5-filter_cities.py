@@ -15,10 +15,9 @@ if __name__ == '__main__':
                 INNER JOIN states AS b\
                 ON a.state_id = b.id\
                 WHERE b.name = '{}'".format(sys.argv[4]))
-    state = cur.fetchall()
+    cities = cur.fetchall()
 
-    for s in state:
-        print(", ".join([city[1] for city in cities]))
+    print(", ".join([city[1] for city in cities]))
 
     cur.close()
     conn.close()
