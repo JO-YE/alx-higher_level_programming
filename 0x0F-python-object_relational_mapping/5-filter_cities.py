@@ -14,7 +14,7 @@ if __name__ == '__main__':
                 FROM cities AS a\
                 INNER JOIN states AS b\
                 ON a.state_id = b.id\
-                WHERE b.name = %s", (sys.argv[4],))
+                WHERE b.name = '{}'".format(sys.argv[4]))
     state = cur.fetchall()
 
     for s in state:
