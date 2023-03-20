@@ -11,10 +11,8 @@ if __name__ == '__main__':
     conn = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2],
                            db=sys.argv[3])
     cur = conn.cursor()
-    cur.execute("SELECT a.id, a.name, b.name
-                FROM cities AS a
-                INNER JOIN states AS b
-                ON a.state_id = b.id")
+    cur.execute("SELECT * FROM states WHERE BINARY name = %s",
+                (sys.argv[4],))
     state = cur.fetchall()
 
     for s in state:
