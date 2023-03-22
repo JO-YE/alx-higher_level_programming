@@ -19,7 +19,9 @@ if __name__ == '__main__':
 
     state_delete = session.query(State).filter(State.name.like('%a%')).first()
 
-    session.delete(state_delete)
+    for dele in state_delete:
+        session.delete(dele)
+
     session.commit()
 
     session.close()
