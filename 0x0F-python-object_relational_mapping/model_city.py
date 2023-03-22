@@ -8,8 +8,12 @@ from sqlalchemy.ext.declarative import declarative_base
 
 
 class City(Base):
-    '''
-    Class with id and name, state_id attributes of each state
+    '''  Represents a city column for a MySQL table
+
+    __tablename__ (str): The name of the MySQL table to store Cities.
+    id (sqlalchemy.Integer): The city's id.
+    name (sqlalchemy.String): The city's name.
+    state_id(sqlalchemy.Integer): Foreign key to states.id
     '''
     __tablename__ = 'cities'
     id = Column(Integer, autoincrement=True, nullable=False, primary_key=True,
