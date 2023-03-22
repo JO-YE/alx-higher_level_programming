@@ -6,6 +6,7 @@ from sqlalchemy import create_engine
 import sys
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
+from model_city import City
 
 
 if __name__ == '__main__':
@@ -17,9 +18,9 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    cities = session.query(City).order_by(cities.id).all()
+    st_cy = session.query(State, City).filter(City.state_id == State.id).all()
 
-    for city in cities:
-        print("{}: {} {}".format(state.name, city.id, city.name))
+    for state, city in st_cy:
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
 
     session.close()
