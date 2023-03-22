@@ -4,8 +4,8 @@ a python file that contains the class definition of a City
 and an instance Base = declarative_base() from model_state
 '''
 from sqlalchemy import Integer, Table, Column, String, ForeignKey
+from sqlalchemy.ext.declarative import declarative_base
 from model_state import Base
-
 
 
 class City(Base):
