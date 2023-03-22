@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-a python file that prints all City objects from database
+A python file that prints all City objects from database
 '''
 from sqlalchemy import create_engine
 import sys
