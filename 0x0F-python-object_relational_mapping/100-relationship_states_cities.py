@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-''' creates the State "California" with the City San Francisco
-    from the database hbtn_0e_100_usa
-'''
+"""
+Creates the State "California" with the City San Francisco
+from the database hbtn_0e_100_usa
+"""
 from sqlalchemy import create_engine
 import sys
 from model_state import Base, State
