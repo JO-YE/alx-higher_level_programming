@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Continuation from model_state with a new attribute and
-relationship function linking State with Class City
+Contains State class and City relationship
 """
 from sqlalchemy import Integer, Table, Column, String
 from sqlalchemy.ext.declarative import declarative_base
