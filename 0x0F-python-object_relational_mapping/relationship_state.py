@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Continuation from model_state with a new attribute and
+''' continuation from model_state with a new attribute and
     relationship function linking State with Class City
 '''
 from sqlalchemy import Integer, Table, Column, String
