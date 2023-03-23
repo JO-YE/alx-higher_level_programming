@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''
-    Prints all City objects from the database hbtn_0e_14_usa
+    creates the State “California” with the City “San Francisco”
+    from the database
 '''
 from sqlalchemy import create_engine
 import sys
