@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
-a python file that contains the class definition of a State
-and an instance Base = declarative_base()
+    Continuation from model_state with a new attribute and
+    relationship function linking State with Class City
 '''
 from sqlalchemy import Integer, Table, Column, String
 from sqlalchemy.ext.declarative import declarative_base
