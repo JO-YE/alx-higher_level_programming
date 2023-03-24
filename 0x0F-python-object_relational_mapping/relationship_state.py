@@ -5,6 +5,8 @@ Contains State class and City relationship
 from sqlalchemy import Integer, Table, Column, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
+from relationship_city import Base, City
+
 
 Base = declarative_base()
 
