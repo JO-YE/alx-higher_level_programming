@@ -9,7 +9,8 @@ from model_state import Base
 
 class City(Base):
     """
-    Prints all City objects from the database
+    Class with id, name, and state_id attributes for each city.
+    Defines a foreign key relationship to a State object.
     """
     __tablename__ = 'cities'
     id = Column(Integer, autoincrement=True, nullable=False, primary_key=True)
