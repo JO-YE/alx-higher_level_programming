@@ -5,6 +5,8 @@ A copy from model_city
 from sqlalchemy import Integer, Column, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
+Base = declarative_base()
+
 
 class City(Base):
     """
