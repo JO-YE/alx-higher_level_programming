@@ -3,8 +3,7 @@
 Lists all City objects from the database hbtn_0e_101_usa
 """
 import sys
-from relationship_state import Base, State
-from relationship_city import City
+from relationship_state import State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -17,7 +16,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    st = session.query(State).join(City).order_by(City.id).all()
+    st = session.query(State).order_by(State.id)
 
     for state in st:
         for city in state.cities:
