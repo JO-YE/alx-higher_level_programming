@@ -15,7 +15,7 @@ class State(Base):
     """
     Class with id and name attributes of each state
     """
-    __tablename__ = 'states'
-    id = Column(Integer, autoincrement=True, nullable=False, primary_key=True)
+    __tablename__ = "states"
+    id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
-    cities = relationship("City", backref="state", cascade='all, delete')
+    cities = relationship("City", backref="state", cascade="all, delete")
