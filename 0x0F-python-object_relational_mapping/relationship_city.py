@@ -4,7 +4,6 @@ A copy from model_city
 """
 from sqlalchemy import Integer, Column, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
-from model_state import Base
 
 
 class City(Base):
