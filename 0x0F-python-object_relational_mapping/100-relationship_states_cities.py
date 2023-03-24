@@ -3,10 +3,10 @@
 Creates the State "California" with the City San Francisco
 """
 from sqlalchemy import create_engine
-import sys
-from relationship_state import Base, State
-from relationship_city import City
 from sqlalchemy.orm import sessionmaker
+import sys
+from relationship_state import State
+from relationship_city import Base, City
 
 
 if __name__ == '__main__':
@@ -18,7 +18,6 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    new_city = State(name="California", cities=[City(name="San Francisco")]))
+    session.add(State(name="California", cities=[City(name="San Francisco")]))
 
-    session.add(new_city)
     session.commit()
