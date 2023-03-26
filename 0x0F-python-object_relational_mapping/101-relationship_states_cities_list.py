@@ -4,7 +4,6 @@ Lists all State objects and corresponding City objects contained in the DB
 """
 import sys
 from relationship_state import State
-from relationship_city import City
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
