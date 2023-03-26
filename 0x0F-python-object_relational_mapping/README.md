@@ -55,7 +55,7 @@ guillaume@ubuntu:~/0x0F$ ./1-filter_states.py root root hbtn_0e_0_usa
 (5, 'Nevada')
 ```
 
-[2-my_filter_states.py]https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/2-my_filter_states.py) - a script that takes in an argument and displays all values in the `states` table of `hbtn_0e_0_usa` where `name` matches the argument
+[2-my_filter_states.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/2-my_filter_states.py) - a script that takes in an argument and displays all values in the `states` table of `hbtn_0e_0_usa` where `name` matches the argument
 - The script should take 4 arguments: `mysql username`, `mysql password`, `database name` and `state name searched` (no argument validation needed)
 - Use `format` to create the SQL query with the user input
 - Results must be sorted in ascending order by `states.id`
@@ -67,7 +67,7 @@ guillaume@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizon
 (2, 'Arizona')
 ```
 
-[3-my_safe_filter_states.py]https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/3-my_safe_filter_states.py) - 
+[3-my_safe_filter_states.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/3-my_safe_filter_states.py) - 
 a script that takes in arguments and displays all values in the states table of hbtn_0e_0_usa where name matches the argument. But this time, it is safe from MySQL injections!
 - The script should take 4 arguments: `mysql username`, `mysql password`, `database name` and `state name searched` (safe from MySQL injection)
 - Results must be sorted in ascending order by `states.id`
