@@ -16,7 +16,7 @@
 
 ## File Descriptions
 ### Mandatory
-[0-select_states.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/0-select_states.py) - a script that lists all states from the database `hbtn_0e_0_usa`
+[0-select_states.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/0-select_states.py) - a script that lists all states from the database `hbtn_0e_0_usa`
 - Must use the module `MySQLdb` `(import MySQLdb)`
 - The script should connect to a MySQL server running on `localhost` at port `3306`
 - Results must be sorted in ascending order by `states.id`
@@ -43,7 +43,7 @@ guillaume@ubuntu:~/0x0F$ ./0-select_states.py root root hbtn_0e_0_usa
 (5, 'Nevada')
 ```
 
-[1-filter_states.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/1-filter_states.py) - a script that lists all `states` with a `name` starting with `N` (upper N) from the database `hbtn_0e_0_usa`
+[1-filter_states.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/1-filter_states.py) - a script that lists all `states` with a `name` starting with `N` (upper N) from the database `hbtn_0e_0_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name` (no argument validation needed)
 - Results must be sorted in ascending order by `states.id`
 - The code should not be executed when imported
@@ -55,7 +55,7 @@ guillaume@ubuntu:~/0x0F$ ./1-filter_states.py root root hbtn_0e_0_usa
 (5, 'Nevada')
 ```
 
-[2-my_filter_states.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/2-my_filter_states.py) - a script that takes in an argument and displays all values in the `states` table of `hbtn_0e_0_usa` where `name` matches the argument
+[2-my_filter_states.py]https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/2-my_filter_states.py) - a script that takes in an argument and displays all values in the `states` table of `hbtn_0e_0_usa` where `name` matches the argument
 - The script should take 4 arguments: `mysql username`, `mysql password`, `database name` and `state name searched` (no argument validation needed)
 - Use `format` to create the SQL query with the user input
 - Results must be sorted in ascending order by `states.id`
@@ -67,7 +67,7 @@ guillaume@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizon
 (2, 'Arizona')
 ```
 
-[3-my_safe_filter_states.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/3-my_safe_filter_states.py) - 
+[3-my_safe_filter_states.py]https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/3-my_safe_filter_states.py) - 
 a script that takes in arguments and displays all values in the states table of hbtn_0e_0_usa where name matches the argument. But this time, it is safe from MySQL injections!
 - The script should take 4 arguments: `mysql username`, `mysql password`, `database name` and `state name searched` (safe from MySQL injection)
 - Results must be sorted in ascending order by `states.id`
@@ -79,7 +79,7 @@ guillaume@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizon
 (2, 'Arizona')
 ```
 
-[4-cities_by_state.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/4-cities_by_state.py) - a script that lists all `cities` from the database `hbtn_0e_4_usa`
+[4-cities_by_state.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/4-cities_by_state.py) - a script that lists all `cities` from the database `hbtn_0e_4_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Only use `execute()` once
 - Results must be sorted in ascending order by `cities.id`
@@ -130,13 +130,13 @@ guillaume@ubuntu:~/0x0F$ ./4-cities_by_state.py root root hbtn_0e_4_usa
 guillaume@ubuntu:~/0x0F$ 
 ```
 
-[5-filter_cities.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/5-filter_cities.py) - a script that takes in the name of a state as an argument and lists all `cities` of that state, using the database `hbtn_0e_4_usa`
+[5-filter_cities.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/5-filter_cities.py) - a script that takes in the name of a state as an argument and lists all `cities` of that state, using the database `hbtn_0e_4_usa`
 - The script should take 4 arguments: `mysql username`, `mysql password`, `database name` and `state name searched` (safe from MySQL injection)
 - Only use `execute()` once
 - Results must be sorted in ascending order by `cities.id`
 - The code should not be executed when imported
 
-[model_state.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/model_state.py) - a python file that contains the class definition of a `State` and an instance `Base = declarative_base()`
+[model_state.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/model_state.py) - a python file that contains the class definition of a `State` and an instance `Base = declarative_base()`
 - `State` class:
     - inherits from `Base`
     - links to the MySQL table `states`
@@ -174,7 +174,7 @@ Table   Create Table
 states  CREATE TABLE `states` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `name` varchar(128) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=latin1
 guillaume@ubuntu:~/0x0F$ 
 ```
-[7-model_state_fetch_all.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/7-model_state_fetch_all.py) - a script that lists all `State` objects from the database `hbtn_0e_6_usa`
+[7-model_state_fetch_all.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/7-model_state_fetch_all.py) - a script that lists all `State` objects from the database `hbtn_0e_6_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Import `State` and `Base` from `model_state` - `from model_state import Base, State`
 - Results must be sorted in ascending order by `states.id`
@@ -195,7 +195,7 @@ guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$ 
 ```
 
-[8-model_state_fetch_first.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/8-model_state_fetch_first.py) - a script that prints the first `State` object from the database `hbtn_0e_6_usa`
+[8-model_state_fetch_first.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/8-model_state_fetch_first.py) - a script that prints the first `State` object from the database `hbtn_0e_6_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Import `State` and `Base` from `model_state` - `from model_state import Base, State`
 - The state displayed must be the first in `states.id`
@@ -208,7 +208,7 @@ guillaume@ubuntu:~/0x0F$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$
 ```
 
-[9-model_state_filter_a.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/9-model_state_filter_a.py) - a script that lists all `State` objects that contain the letter `a` from the database `hbtn_0e_6_usa`
+[9-model_state_filter_a.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/9-model_state_filter_a.py) - a script that lists all `State` objects that contain the letter `a` from the database `hbtn_0e_6_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Import `State` and `Base` from `model_state` - `from model_state import Base, State`
 - Results must be sorted in ascending order by `states.id`
@@ -222,7 +222,7 @@ guillaume@ubuntu:~/0x0F$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$
 ```
 
-[9-model_state_filter_a.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/9-model_state_filter_a.py) - a script that lists all `State` objects that contain the letter `a` from the database `hbtn_0e_6_usa`
+[9-model_state_filter_a.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/9-model_state_filter_a.py) - a script that lists all `State` objects that contain the letter `a` from the database `hbtn_0e_6_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Import `State` and `Base` from `model_state` - `from model_state import Base, State`
 - Results must be sorted in ascending order by `states.id`
@@ -235,7 +235,7 @@ guillaume@ubuntu:~/0x0F$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
 5: Nevada
 guillaume@ubuntu:~/0x0F$ 
 ```
-[10-model_state_my_get.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/10-model_state_my_get.py) - a script that prints the `State` object with the `name` passed as argument from the database `hbtn_0e_6_usa`
+[10-model_state_my_get.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/10-model_state_my_get.py) - a script that prints the `State` object with the `name` passed as argument from the database `hbtn_0e_6_usa`
 - The script should take 4 arguments: `mysql username`, `mysql password`, `database name` and `state name to search`  (SQL injection free)
 - Import `State` and `Base` from `model_state` - `from model_state import Base, State`
 - Results must display the `states.id`
@@ -249,7 +249,7 @@ Not found
 guillaume@ubuntu:~/0x0F$
 ```
 
-[11-model_state_insert.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/11-model_state_insert.py) -  a script that adds the `State `object "Louisiana" to the database `hbtn_0e_6_usa`
+[11-model_state_insert.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/11-model_state_insert.py) -  a script that adds the `State `object "Louisiana" to the database `hbtn_0e_6_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Import `State` and `Base` from `model_state` - `from model_state import Base, State`
 - Print the new `states.id` after creation
@@ -267,7 +267,7 @@ guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$ 
 ```
 
-[12-model_state_update_id_2.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/12-model_state_update_id_2.py) - a script that changes the name of a `State` object from the database `hbtn_0e_6_usa`
+[12-model_state_update_id_2.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/12-model_state_update_id_2.py) - a script that changes the name of a `State` object from the database `hbtn_0e_6_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Import `State` and `Base` from `model_state` - `from model_state import Base, State`
 - Change the name of the `State` where `id = 2` to `New Mexico`
@@ -284,7 +284,7 @@ guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$
 ```
 
-[13-model_state_delete_a.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/13-model_state_delete_a.py) - a script that deletes all `State` objects with a name containing the letter `a` from the database `hbtn_0e_6_usa`
+[13-model_state_delete_a.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/13-model_state_delete_a.py) - a script that deletes all `State` objects with a name containing the letter `a` from the database `hbtn_0e_6_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Import `State` and `Base` from `model_state` - `from model_state import Base, State`
 - The code should not be executed when imported
@@ -296,7 +296,7 @@ guillaume@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 guillaume@ubuntu:~/0x0F$ 
 ```
 
-[model_city.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/model_city.py) - a Python file similar to `model_state.py` named `model_city.py` that contains the class definition of a `City`.
+[model_city.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/model_city.py) - a Python file similar to `model_state.py` named `model_city.py` that contains the class definition of a `City`.
 
 `City` class:
 - inherits from `Base` (imported from `model_state`)
@@ -306,7 +306,7 @@ guillaume@ubuntu:~/0x0F$
 - class attribute `state_id` that represents a column of an integer, can’t be null and is a foreign key to `states.id`
 - Must use the module `SQLAlchemy`
 
-[14-model_city_fetch_by_state.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/14-model_city_fetch_by_state.py) - a script `14-model_city_fetch_by_state.py` that prints all `City` objects from the database `hbtn_0e_14_usa`
+[14-model_city_fetch_by_state.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/14-model_city_fetch_by_state.py) - a script `14-model_city_fetch_by_state.py` that prints all `City` objects from the database `hbtn_0e_14_usa`
 ```
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Import `State` and `Base` from `model_state` - `from model_state import Base, State`
@@ -358,13 +358,13 @@ Nevada: (15) Carson City
 guillaume@ubuntu:~/0x0F$ 
 ```
 ### Advanced
-[relationship_city.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/relationship_city.py) and [relationship_state.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/relationship_state.py) - Improves the files `model_city.py` and `model_state.py`, and saves them as `relationship_city.py` and `relationship_state.py`:
+[relationship_city.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/relationship_city.py) and [relationship_state.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/relationship_state.py) - Improves the files `model_city.py` and `model_state.py`, and saves them as `relationship_city.py` and `relationship_state.py`:
 - `City` class:
     - No change
 - `State` class:
     - In addition to previous requirements, the class attribute `cities` must represent a relationship with the class `City`. If the `State` object is deleted, all linked `City` objects must be automatically deleted. Also, the reference from a `City` object to his `State` should be named `state`
     
-[100-relationship_states_cities.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/100-relationship_states_cities.py) -  a script that creates the `State` "California" with the City "San Francisco" from the database `hbtn_0e_100_usa`: (`100-relationship_states_cities.py`)
+[100-relationship_states_cities.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/100-relationship_states_cities.py) -  a script that creates the `State` "California" with the City "San Francisco" from the database `hbtn_0e_100_usa`: (`100-relationship_states_cities.py`)
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Must use the `cities` relationship for all `State` objects
 - The code should not be executed when imported
@@ -390,7 +390,7 @@ id  name    state_id
 guillaume@ubuntu:~/0x0F$ 
 ```
 
-[101-relationship_states_cities_list.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/101-relationship_states_cities_list.py) - a script that lists all `State` objects, and corresponding `City` objects, contained in the database `hbtn_0e_101_usa`
+[101-relationship_states_cities_list.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/101-relationship_states_cities_list.py) - a script that lists all `State` objects, and corresponding `City` objects, contained in the database `hbtn_0e_101_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Must use the `cities` relationship for all `State` objects
 - Results must be sorted in ascending order by `states.id` and `cities.id`
@@ -449,7 +449,7 @@ guillaume@ubuntu:~/0x0F$ ./101-relationship_states_cities_list.py root root hbtn
 guillaume@ubuntu:~/0x0F$ 
 ```
 
-[102-relationship_cities_states_list.py](https://github.com/Gbeminiyi-S/alx-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/102-relationship_cities_states_list.py) - a script that lists all `City` objects from the database `hbtn_0e_101_usa`
+[102-relationship_cities_states_list.py](https://github.com/JO-YE/alx-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/102-relationship_cities_states_list.py) - a script that lists all `City` objects from the database `hbtn_0e_101_usa`
 - The script should take 3 arguments: `mysql username`, `mysql password` and `database name`
 - Must use the `state` relationship to access to the `State` object linked to the `City` object
 - Results must be sorted in ascending order by `cities.id`
