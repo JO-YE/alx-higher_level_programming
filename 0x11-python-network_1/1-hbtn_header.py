@@ -2,7 +2,7 @@
 '''a python scipt that takes in a url and display value of a specified
    header parameter
 '''
-import urllib.parse
+import urllib.request
 import sys
 
 
