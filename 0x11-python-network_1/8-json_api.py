@@ -20,7 +20,7 @@ if __name__ == '__main__':
             print('No result')
         else:
             res_id = res.get('id')
-            res_id = res.get('name')
-            print(f'[{res_id}] {res_id}')
+            res_name = res.get('name')
+            print(f'[{res_id}] {res_name}')
     except ValueError:
         print('Not a valid JSON')
