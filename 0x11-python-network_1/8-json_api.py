@@ -15,7 +15,8 @@ if __name__ == '__main__':
     res = requests.post('http://0.0.0.0:5000/search_user', data=datas)
 
     try:
-        if res.json() == {}:
+        res = res.json()
+        if res == {}:
             print('No result')
         else:
             res_id = res.get('id')
