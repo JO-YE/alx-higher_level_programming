@@ -7,8 +7,10 @@ import sys
 
 
 if __name__ == '__main__':
-    respon = requests.get(sys.argv[1])
+    response = requests.get(sys.argv[1])
     code = repon.status_code
 
-    if respon.status_code >= 400:
+    if response.status_code >= 400:
         print('Error code: {}'.format(code))
+    else:
+        print(response.text)
