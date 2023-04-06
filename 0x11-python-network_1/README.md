@@ -4,6 +4,7 @@
 - [HOWTO Fetch Internet Resources Using urllib Package](https://docs.python.org/3/howto/urllib2.html)
 - [Quickstart with Requests package](https://requests.readthedocs.io/en/latest/)
 - [Requests package](https://pypi.org/project/requests/)
+- [GitHub API](https://docs.github.com/en/rest/commits/commits?apiVersion=2022-11-28)
 
 ## General
 >How to fetch internet resources with the Python package urllib
