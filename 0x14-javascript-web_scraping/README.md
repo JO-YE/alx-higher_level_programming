@@ -5,8 +5,8 @@
 - [The workflow of accessing the attributes of a simplly-created JSON object](https://medium.com/@vietkieutie/the-workflow-of-accessing-the-attributes-of-a-simply-created-json-object-82a5b33e2319)
 - [request module](https://github.com/request/request)
 - [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
-- [semi-standard documentation]()
-- [request module documentation]()
+- [semi-standard documentation](https://github.com/standard/semistandard)
+- [request module documentation](https://github.com/request/request)
 
 
 ## Objectives
