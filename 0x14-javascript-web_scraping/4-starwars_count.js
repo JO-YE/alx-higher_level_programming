@@ -11,7 +11,7 @@ request(url, function (err, response, data) {
     console.log(err);
   } else {
     const films = JSON.parse(data).results;
-    const match = films.filter((film) => file.characters.includes(actor));
+    const match = films.filter((film) => film.characters.includes(actor));
     console.log(`${match.length}`);
   }
 });
