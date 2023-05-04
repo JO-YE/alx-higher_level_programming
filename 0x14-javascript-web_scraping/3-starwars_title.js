@@ -9,6 +9,7 @@ request.get(url, function (err, response, data) {
   if (err) {
     console.log(err);
   } else {
-    console.log(JSON.parse(data).title);
+    const title = JSON.parse(data);
+    console.log(`${title.title}`);
   }
 });
