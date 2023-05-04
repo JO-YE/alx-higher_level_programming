@@ -2,7 +2,7 @@
 // print title of a Star Wars movies
 
 const request = require('request');
-const actor = 'https://swapi-api.alx-tools.com/api/people/18/'
+const actor = 'https://swapi-api.alx-tools.com/api/people/18/';
 const url = process.argv[2];
 
 // => can also be used instead of the function keyword just like in task 0 & 1
